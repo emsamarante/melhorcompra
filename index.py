@@ -19,6 +19,7 @@ app.layout = dbc.Container([
         dbc.Col([
             dbc.Card([
                 html.Legend("Compare os preços!"),
+                html.P("Use . 'ponto' no lugar da , 'vírgula'"),
                 html.Br(), 
                 dbc.Row([
                     dbc.Col([
@@ -81,4 +82,4 @@ def calcula(precoA, qtdA, precoB, qtdB):
         return "Preencha todos os campos!"
     
 if __name__ == '__main__':
-    app.run_server(debug=True, host='0.0.0.0')
+    app.run_server(debug=False, host='0.0.0.0')
